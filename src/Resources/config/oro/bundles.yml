@@ -1,0 +1,2 @@
+bundles:
+    - { name: OroToolbox\SMSBundle\OroToolboxSMSBundle, priority: 50}

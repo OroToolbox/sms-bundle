@@ -1,0 +1,50 @@
+{
+    "name": "OroToolbox/SMSBundle",
+    "type": "bundle",
+    "license" : "MIT",
+    "repositories": {
+        "oro": {
+            "type": "composer",
+            "url": "https://packagist.orocrm.com"
+        },
+        "asset-packagist": {
+            "type": "composer",
+            "url": "https://asset-packagist.orocrm.com"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "OroToolbox\\SMSBundle\\": "src",
+            "OroToolbox\\SMSBundle\\Tests\\": "tests"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OroToolbox\\SMSBundle\\Tests\\": "tests/"
+        },
+        "files": [
+            "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+        ]
+    },
+    "require": {
+        "oro/platform": "2.6.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "symfony/phpunit-bridge": "3.2.*",
+        "friendsofphp/php-cs-fixer": "2.1.*",
+        "sebastian/phpcpd": "^3.0",
+        "phpstan/phpstan-shim": "^0.10.2"
+    },
+    "config": {
+        "sort-packages": true,
+        "bin-dir": "bin",
+        "platform": {
+            "php": "7.1"
+        },
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "minimum-stability": "dev"
+}
