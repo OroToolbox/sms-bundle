@@ -46,5 +46,8 @@
             "enabled": false
         }
     },
+    "scripts": {
+        "test": "bin/phpunit"
+    },
     "minimum-stability": "dev"
 }
